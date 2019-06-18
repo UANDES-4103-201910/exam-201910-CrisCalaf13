@@ -1,0 +1,34 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.Topbar{
+  background: lightblue;
+}
+
+.Header{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.Header_options{
+  justify-content: center;
+  height: 30px;
+  background: lightgray;
+}
+
+.product_container{
+  background: blueviolet;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.separator{
+  background: white;
+}
+h1{
+  color: white;
+}
+
+footer{background: lightblue}

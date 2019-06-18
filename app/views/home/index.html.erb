@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = en>
+<head>
+  <title>Home page</title>
+  <link rel="stylesheet" href="home.scss">
+</head>
+
+<body>
+<div class = "Topbar">
+  <h1><%=link_to "Z-mobile", root_path%></h1>
+</div>
+
+<div class ="Header">
+  <strong><div class="Header_options">Handset</div></strong>
+  <strong><div class="Header_options">Prepay Options</div></strong>
+  <strong><div class="Header_options">Subscription</div></strong>
+</div>
+
+<div class = "Main_content">
+  <div class="product_container">
+    <% @products.each do |product|%>
+      <p>
+        <strong>Brand:</strong>
+        <%= product.brand %>
+      </p>
+      <p>
+        <strong>Model:</strong>
+        <%= product.model %>
+      </p>
+      <p>
+        <strong>Variant:</strong>
+        <%= product.variant %>
+      </p>
+      <p>
+        <strong>price</strong>
+        <%= product.price %>
+      </p>
+      <p>
+        <strong>Short Description:</strong>
+        <%= product.shortdescription%>
+      </p>
+      <p>
+        <strong>Description:</strong>
+        <%= product.longdescription%>
+      </p>
+    <% end %>
+  </div>
+  <div class="separator">
+    <br>
+  </div>
+</div>
+
+</body>
+
+<footer>
+  <p>Company: Z-mobile inc</p>
+  <p>Contact number: +569 555 5555</p>
+  <p>Address: No where 12345</p>
+</footer>
